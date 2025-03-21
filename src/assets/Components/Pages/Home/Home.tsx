@@ -1,10 +1,13 @@
 
+import Footer from "./Footer/Footer"
+import Header from "./Header/Header"
 import "./Home.css"
 
 function Home() {
   return (
     <div>
-      <h1>This is MUTC Home Page</h1>
+      <Header/>
+      <Footer/>
     </div>
   )
 }
