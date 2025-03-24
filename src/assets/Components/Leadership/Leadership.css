@@ -1,0 +1,38 @@
+.leadership-card {
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+    max-width: 250px;
+   margin-left: 2rem;
+   align-items: center;
+   
+}
+
+
+
+.leadership-details p {
+    align-items: center;
+    color: gray;
+    text-align: center;
+}
+
+.leader-name {
+    color: black !important;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.leader-position {
+    color: green !important;
+    font-size: 1.5rem;
+}
+
+.leadership-social-media {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}

@@ -1,7 +1,7 @@
 
 import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
-import "./Home.css"
+
 
 function Home() {
   return (
