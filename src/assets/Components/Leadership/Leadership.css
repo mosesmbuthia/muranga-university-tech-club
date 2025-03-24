@@ -1,38 +1,77 @@
-.leadership-card {
-    display: flex;
-    flex-direction: column;
-    border: solid red;
-    max-width: 250px;
-   margin-left: 2rem;
-   align-items: center;
-   
+section h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
+.leadership-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
 
-
-.leadership-details p {
+.leadership-card {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    color: gray;
-    text-align: center;
+    gap: 1rem;
+   
+    max-width: 600px;
+    padding: 1rem;
+    margin-left: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.leader-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.leadership-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .leader-name {
-    color: black !important;
+    color: black;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .leader-position {
-    color: green !important;
+    color: green;
     font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.leader-bio {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .leadership-social-media {
     display: flex;
-    gap: .5rem;
-    align-items: center;
-    justify-content: center;
-    
-    
+    gap: 0.5rem;
+}
 
+.leadership-social-media svg {
+    font-size: 2rem;
+    color: green;
+}
+
+.leadership-social-media p {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.leadership-social-media svg:hover {
+    transform: scale(1.2);
 }

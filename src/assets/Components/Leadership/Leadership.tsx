@@ -1,25 +1,54 @@
 import "./Leadership.css";
-import ndiaImg from "../../images/ndia.jpg"
+import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin } from "react-icons/fa6";
+import { teamMembers, TeamMember } from "../../../Data/teamData";
+
+function LeadershipCard({ name, position, bio, image, socialLinks }: TeamMember) {
+  return (
+    <div className="leadership-card">
+      <div className="leader-image">
+        <img src={image} alt={name} />
+      </div>
+
+      <div className="leadership-details">
+        <p className="leader-name">{name}</p>
+        <p className="leader-position">{position}</p>
+        <p className="leader-bio">{bio}</p>
+
+        <div className="leadership-social-media">
+          {socialLinks.instagram && (
+            <a href={socialLinks.instagram} target="_blank" >
+              <FaInstagram />
+            </a>
+          )}
+          {socialLinks.twitter && (
+            <a href={socialLinks.twitter} target="_blank" >
+              <FaXTwitter />
+            </a>
+          )}
+          {socialLinks.facebook && (
+            <a href={socialLinks.facebook} target="_blank" >
+              <FaFacebook />
+            </a>
+          )}
+          {socialLinks.linkedin && (
+            <a href={socialLinks.linkedin} target="_blank" >
+              <FaLinkedin />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Leadership() {
   return (
     <section>
       <h1>Meet our dedicated leadership</h1>
-      <div className="leadership-card">
-        <div className="leader-image">
-          <img src={ndiaImg} alt="" />
-        </div>
-        <div className="leadership-details">
-          <p className="leader-name">John Ndia</p>
-          <p className="leader-position">Club Patron</p>
-          <p className="leader-bio">Please create a brief biography for him and use any suitable placeholder images found online for his profile picture</p>
-          <div className="leadership-social-media">
-            <p>Inst</p>
-            <p>Tw</p>
-            <p>Fb</p>
-            <p>Lik</p>
-          </div>
-        </div>
-
+      <div className="leadership-container">
+        {teamMembers.map((member) => (
+          <LeadershipCard key={member.name} {...member} />
+        ))}
       </div>
     </section>
   );
