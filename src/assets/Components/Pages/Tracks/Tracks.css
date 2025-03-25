@@ -1,0 +1,63 @@
+
+.tracks-container {
+    padding-left: 2rem;
+}
+
+.track-card {
+    display: flex;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: white;
+  }
+  
+  .track-image {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .track-content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .track-category {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    align-self: flex-start;
+  }
+  
+  .track-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .track-description {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 600;
+    
+    
+  }
+  
+  .learn-more {
+    background: none;
+    border: none;
+    color: blue;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .learn-more:hover {
+    text-decoration: underline;
+  }
+  

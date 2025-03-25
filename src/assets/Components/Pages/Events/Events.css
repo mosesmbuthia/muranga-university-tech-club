@@ -87,3 +87,6 @@
     font-size: 1.5rem;
     vertical-align: middle;
 }
+.span {
+    font-weight: bold !important;
+}

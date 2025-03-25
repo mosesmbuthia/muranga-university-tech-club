@@ -16,7 +16,7 @@ const EventCard: React.FC<EventProps> = ({ title, organizer, time, location, ima
       </div>
       <img src={image} alt={title} className="event-image" />
       <p className="event-description">
-        Join us {time} at {location} for an engaging {title.toLowerCase()} session.
+        Join us <span className="span">{time}</span> at <span>{location}</span> for an engaging <span>{title.toLowerCase()}</span> session.
       </p>
       <div className="event-actions">
         <button className="action-button">Confirm Attendance</button>
