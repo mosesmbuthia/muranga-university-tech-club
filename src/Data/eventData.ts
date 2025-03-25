@@ -1,4 +1,4 @@
-import { use } from "react";
+
 import cyberImg from "../../src/assets/images/cyber-security.jpg";
 import userInterface from "../../src/assets/images/user-inteface.jpg";
 import webdevImg from "../../src/assets/images/webdev.jpg";
