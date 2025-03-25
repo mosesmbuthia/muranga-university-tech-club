@@ -1,3 +1,12 @@
+.events-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .event-card {
     width: 350px;
     border-radius: 8px;
@@ -6,6 +15,7 @@
     background-color: white;
     margin-top: 2rem;
     margin-left: 2rem;
+    
 }
 
 .event-header {
@@ -48,7 +58,7 @@
 .event-description {
     padding: 16px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: grey; 
 }
 

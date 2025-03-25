@@ -1,30 +1,43 @@
-import cyberImg from "../../../images/cyber-security.jpg"
 import { IoMdSend } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
-import "./Events.css"
-function Events() {
+import "./Events.css";
+import { eventsData, EventProps } from "../../../../Data/eventData";
+
+const EventCard: React.FC<EventProps> = ({ title, organizer, time, location, image }) => {
   return (
-   <section>
-    <h1>Explore MUTC Events</h1>
+   <div className="events-container">
      <div className="event-card">
       <div className="event-header">
-      <FaUserCircle className="event-organizer-img" size={50} />
+        <FaUserCircle className="event-organizer-img" size={50} />
         <div className="event-info">
-          <h2 className="event-title">Cyber Security</h2>
-          <p className="event-subtitle">Led by Webster Ifedha</p>
+          <h2 className="event-title">{title}</h2>
+          <p className="event-subtitle">Led by {organizer}</p>
         </div>
       </div>
-      <img src={cyberImg} alt="Cybersecurity" className="event-image" />
+      <img src={image} alt={title} className="event-image" />
       <p className="event-description">
-        Join us every Monday from 4 PM to 7 PM at Computer Lab F04 for an engaging cybersecurity session.
+        Join us {time} at {location} for an engaging {title.toLowerCase()} session.
       </p>
       <div className="event-actions">
         <button className="action-button">Confirm Attendance</button>
         <button className="action-button">Share <IoMdSend /></button>
       </div>
     </div>
-   </section>
-  )
-}
+   </div>
+  );
+};
 
-export default Events
+const Events: React.FC = () => {
+  return (
+    <section>
+      <h1>Explore MUTC Events</h1>
+      <div className="events-container">
+        {eventsData.map((event, index) => (
+          <EventCard key={index} {...event} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Events;
