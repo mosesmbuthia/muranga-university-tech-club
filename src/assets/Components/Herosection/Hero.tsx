@@ -11,13 +11,13 @@ function Hero() {
       backgroundRepeat: "no-repeat",
     }}>
       <div className="hero-content">
-        <h1>Murang'a University Tech Club</h1>
+        <h1>Unlock your potential with hands-on projects,  <br />mentorship, and
+        networking opportunities.</h1>
         <p>
-          Unlock your potential with hands-on projects, mentorship, and
-          networking opportunities.
+          
         </p>
         <div className="hero-buttons">
-          <button className="btn primary-btn">Get Started</button>
+          <button className="btn primary-btn">Join Us</button>
           <button className="btn secondary-btn">Read More</button>
         </div>
       </div>

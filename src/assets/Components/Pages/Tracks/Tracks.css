@@ -20,7 +20,7 @@
   
   .track-image {
     width: 40%;
-    object-fit: cover;
+   object-fit: cover;
   }
   
   .track-content {
