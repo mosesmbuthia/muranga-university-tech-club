@@ -13,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: black;
+  background: linear-gradient(to bottom, white, #f0f4f8); 
 }
 
 ol, ul {
@@ -22,3 +23,4 @@ ol, ul {
 a {
   text-decoration: none;
 }
+

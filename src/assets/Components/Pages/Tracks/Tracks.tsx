@@ -5,6 +5,7 @@ import mobileImg from "../../../images/mobile app.jpg"
 import cloudengImg from "../../../images/cloudeng.jpg"
 import powerBiImg from "../../../images/powebi.png"
 import "./Tracks.css"
+import Contacts from "../../Contacts/Contacts"
 function Tracks() {
   return (
     <section>
@@ -111,6 +112,7 @@ function Tracks() {
 
 
       </div>
+      <Contacts/>
     </section>
   )
 }
