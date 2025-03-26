@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright © 2024 Moses Mbuthia. All Rights Reserved.</p>
+          <p>Copyright © 2025 Moses Mbuthia. All Rights Reserved.</p>
           <div className="social-icons">
             <FaFacebook />
             <FaInstagram />

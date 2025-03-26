@@ -1,5 +1,6 @@
 
-import Footer from "./Footer/Footer"
+import Testimonials from "./Testimonials/Testimonials"
+import Hero from "../../Herosection/Hero"
 import Header from "./Header/Header"
 
 
@@ -7,7 +8,10 @@ function Home() {
   return (
     <div>
       <Header/>
-      <Footer/>
+      <Hero/>
+      <Testimonials/>
+      
+      
     </div>
   )
 }
