@@ -1,0 +1,66 @@
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 8%;
+    background: #f4f4f4;
+  }
+  
+  .about-us-content {
+    max-width: 600px;
+  }
+  
+  .about-us-content h2 {
+    font-size: 2.5rem;
+    color: #002147;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-content p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: black;
+  }
+  
+  .about-cards {
+    display: flex;
+    gap: rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header img {
+    width: 40px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #002147;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
