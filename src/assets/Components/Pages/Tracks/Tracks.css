@@ -1,6 +1,12 @@
 
 .tracks-container {
     padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .track-card {
